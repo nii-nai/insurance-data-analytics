@@ -40,7 +40,7 @@ To explore how demographic and policy factors relate to claims behavior, and to 
 
 | Layer | Tool |
 |---|---|
-| ETL / Transformation | Python (`pandas`, `NumPy`, `openpyxl`) |
+| ETL / Transformation | Python (`pandas`, `NumPy`) |
 | Data Warehouse | Google BigQuery |
 | Analysis | GoogleSQL (BigQuery SQL) |
 | Visualization | Power BI (DAX) |
@@ -59,7 +59,7 @@ Raw data was sourced as **two anonymized CSV files**:
 
 The data was modeled into the following relational structure in BigQuery:
 
-![Insurance ERD](assets/erd.png)
+![Insurance ERD](images/insurance_ERD.png)
 
 **Core entity groups:**
 - **Corporate side** — `companies`, `branches`, `corporate_insurance`, `covered_employees`, `beneficiaries`
