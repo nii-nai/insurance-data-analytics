@@ -59,7 +59,7 @@ Raw data was sourced as **two anonymized CSV files**:
 
 The data was modeled into the following relational structure in BigQuery:
 
-![Insurance ERD](images/insurance_ERD.png)
+![Insurance ERD](images/Insurance_ERD.png)
 
 **Core entity groups:**
 - **Corporate side** — `companies`, `branches`, `corporate_insurance`, `covered_employees`, `beneficiaries`
@@ -68,7 +68,7 @@ The data was modeled into the following relational structure in BigQuery:
 
 ## 🔄 Pipeline / Methodology
 
-![Data Analytics Workflow](assets/workflow.png)
+![Data Analytics Workflow](images/Workflow.png)
 
 1. **CSV File** — Raw data collected and stored in CSV format
 2. **Python (Transformation)** — Data cleaning, transformation, feature engineering, and preparation using `pandas`, `NumPy`, and `openpyxl`
@@ -134,25 +134,6 @@ insurance-analytics/
 - Google Cloud account with BigQuery access
 - Power BI Desktop
 
-### Setup
-
-```bash
-# 1. Clone this repository
-git clone https://github.com/[your-username]/insurance-analytics.git
-cd insurance-analytics
-
-# 2. Install dependencies
-pip install -r requirements.txt
-
-# 3. Run the ETL script
-python etl/transform.py
-```
-
-Then:
-1. Load the transformed output into BigQuery using `sql/schema.sql`
-2. Run analysis queries found in `sql/queries/`
-3. Open `dashboard/insurance_dashboard.pbix` in Power BI Desktop and refresh the data connection
-
 ## ⚠️ Limitations & Next Steps
 
 - **Sample size imbalance** — The sourced data came in two CSV files: customer insurance data (~50,000 rows) and companies insurance data (~2,500 rows). This disparity rendered analysis across market segments (retail vs. corporate) wholly biased, since the retail segment is over-represented relative to the corporate segment.
@@ -162,10 +143,4 @@ Then:
   - Add predictive modeling to flag high-risk profiles ahead of policy underwriting
   - Automate the ETL pipeline (e.g. Cloud Functions, Airflow) for recurring refreshes
 
-## 👤 Author
 
-**[Your Name]**
-[LinkedIn](#) · [Portfolio](#) · [Email](#)
-
----
-⭐️ If you found this project useful, consider giving it a star!
