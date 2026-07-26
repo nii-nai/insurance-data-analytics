@@ -97,7 +97,7 @@ The data was modeled into the following relational structure in BigQuery:
 
 ## 📊 Dashboard
 
-![Claims Dashboard](assets/dashboard_preview.png)
+![Claims Dashboard](dashboard.png)
 
 The Power BI dashboard (styled for a sample client, "Hollard") includes:
 - KPI summary cards — Claim Amount, No. of Claims, Total Premiums, Claim-to-Premium Ratio
